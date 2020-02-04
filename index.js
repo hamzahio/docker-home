@@ -1,8 +1,7 @@
 const express = require("express");
 
 // Constants
-const PORT = 8080;
-const HOST = "0.0.0.0";
+const PORT = process.env.PORT;
 
 // App
 const app = express();
@@ -11,4 +10,4 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT);
-console.log(`Running on http://${HOST}:${PORT}`);
+console.log(`Running on ${PORT}`);
