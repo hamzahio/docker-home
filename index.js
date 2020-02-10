@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 const app = express();
 app.get("/", (req, res) => {
   res.send(`
-  <h1 style="text-align:center;">Good Morning Musab & 👩‍🍳  Hamzah good 👦${process.env.MESSAGE}</h1>
+  <h1 style="text-align:center;">Good Morning ..... </h1>
   <pre>
     <code>${JSON.stringify(process.env, null, 2)}</code>
   </pre>
